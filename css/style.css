@@ -6,19 +6,39 @@ html {
 
 body {
     background: #ccc;
-    margin: 30px 50px;
+    /* margin: 30px 50px; */
     line-height: 1.4;
 }
+
+
+.header {
+    overflow-X: hidden;
+}
+
 
 .container {
     width: 80%;
     margin: auto;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 35px;
+    height: 3px;
+    margin: 5px 0;
+    background: #333;
+    transition: all 0.1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
 .btn {
     padding: 0.6rem 1.3rem;
     color: #fff;
-    background: #333333;
+    background: cadetblue;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -29,7 +49,7 @@ img {
 }
 
 .active {
-    background: #333333 !important;
+    background: cadetblue !important;
     color: #ddd !important;
 }
 
@@ -39,13 +59,23 @@ img {
 }
 
 /* Navigation Bar */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
 
-.main-nav ul {
+.nav h3 {
+    display: none;
+}
+
+.main-nav {
     display: grid;
     grid-gap: 1rem;
-    padding: 0;
+    padding: 0 1rem;
     list-style: none;
     grid-template-columns: repeat(6, 1fr);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .main-nav a {
@@ -61,7 +91,7 @@ img {
 
 .main-nav a:hover {
     cursor: pointer;
-    background-color: #333;
+    background-color: cadetblue;
     color: #fff;
 }
 
@@ -77,7 +107,7 @@ img {
 
 .showcase {
     grid-area: showcase;
-    background: url(../images/showcase.jpg);
+    background: url(https://www.armourycoachingstudio.co.uk/uploads/1/2/9/5/129586512/background-images/384840484.jpg);
     opacity: 0.9;
     background-position: center;
     background-size: cover;
@@ -93,6 +123,7 @@ img {
 .showcase h1 {
     margin-bottom: 0;
     font-size: 3rem;
+    color: cadetblue;
 }
 
 .showcase p {
@@ -130,6 +161,7 @@ img {
     background: #ddd;
     grid-template-columns: 1fr 1fr;
     padding: 3rem;
+    margin: 1rem 0;
 }
 
 .random-pictures {
@@ -137,6 +169,13 @@ img {
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     /* grid-auto-rows: auto-fit; */
+}
+
+.random-pictures img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+
 }
 
 .footer {
@@ -171,6 +210,7 @@ img {
     /* display: flex;
 	justify-content: center; */
     height: 100%;
+    grid-area: img;
 }
 
 .light {
@@ -213,6 +253,10 @@ i {
 
 /* Team Members */
 
+.team-members img {
+    object-fit: cover;
+}
+
 .team-info {
     width: 90%;
     margin: auto;
@@ -220,7 +264,6 @@ i {
     background: #ddd;
     grid-gap: 0.8rem;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-auto-flow: dense; */
     grid-auto-rows: minmax(100, auto);
     padding: 1rem 2rem;
 }
@@ -347,6 +390,29 @@ p {
     margin: 0.8rem;
     display: block;
     background: #ddd;
+    position: relative;
+}
+.contact-boxes.success input {
+    border-color: #2ecc71;
+    ;
+
+}
+
+.contact-boxes.error input {
+    border-color: #e74c3c;
+}
+
+.contact-boxes small {
+    color: #e74c3c;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.contact-boxes.error small {
+    visibility: visible;
+    padding: 10px 15px;
 }
 
 .contact-boxes label {
@@ -360,6 +426,7 @@ textarea {
     padding: 1rem;
     width: 80%;
     margin-top: 0 !important;
+ outline: none;
 }
 
 .contact-boxes input,
@@ -397,4 +464,218 @@ textarea {
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
     justify-items: center;
+}
+
+.mission-showcase {
+    background: url(https://www.armourycoachingstudio.co.uk/uploads/1/2/9/5/129586512/background-images/443440755.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    padding: 1rem 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.mission-showcase-text h3 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.mission-showcase-text h1 {
+    font-size: 46px;
+    margin: 0;
+    color: cadetblue;
+}
+
+.mission-about-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+.mission-middle {
+    width: 50%;
+    height: 400px;
+}
+
+.mission-middle img {
+    object-fit: contain;
+}
+
+.mission-middle-text-wrap {
+    width: 50%;
+}
+
+.mission-middle-text h3 {
+    font-size: 32px;
+}
+
+.readmore-text {
+    display: none;
+}
+
+.expandText {
+    display: block;
+    transition-delay: 0.6s;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.mission-bottom {
+    background: url(https://www.armourycoachingstudio.co.uk/uploads/1/2/9/5/129586512/background-images/612624863.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mission-bottom-text-wrap {
+    display: flex;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.mission-bottom-text-wrap div {
+    width: 60%;
+    color: white;
+}
+
+.mission-bottom-text-wrap div h3 {
+    font-size: 32px;
+    color: cadetblue;
+}
+
+.readmore-btn {
+    background: rgb(70, 69, 69);
+    color: white;
+    padding: 0.1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.schedule-showcase-section {
+    background: url(https://www.armourycoachingstudio.co.uk/uploads/1/2/9/5/129586512/background-images/826207528.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 2rem;
+    height: 500px;
+}
+
+.schedule-showcase-text {
+    width: 50%;
+}
+
+.schedule-showcase-text h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.schedule-showcase-text h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+    color: cadetblue;
+    margin: 2px 0;
+}
+
+.schedule-list-section {
+    display: flex;
+    justify-content: space-between;
+    background: #ddd;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.list-btn {
+    width: 100%;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.schedule-list {
+    display: none;
+    background: #333333;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0;
+}
+
+.schedule-list-card {
+    margin: 1rem 0;
+}
+
+.expand-list {
+    display: block;
+}
+
+
+.schedule-list-img {
+    width: 50%;
+}
+
+.schedule-list-wrap {
+    width: 50%;
+    padding: 0 3rem;
+}
+
+.schedule-list-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.schedule-table h3 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    border: 1px solid cadetblue;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: cadetblue;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid cadetblue;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: cadetblue;
 }

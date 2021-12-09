@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME - GRIDBIZ</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -15,37 +16,48 @@
 
   <body>
     <div class="wrapper">
-      <header>
-        <nav class="main-nav">
-          <ul>
+      <h3 style="color: #e74c3c">
+        “This website was created to fulfill Web Technology module’s
+        requirements and does not represent an actual company or service”.
+      </h3>
+      <header class="header">
+        <nav class="nav">
+          <ul class="main-nav">
             <li><a class="active" href="index.html">HOME</a></li>
             <li><a href="service.html">SERVICES</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="contacts.html">CONTACTS</a></li>
-            <li><a href="contacts.html">Our Mission</a></li>
-            <li><a href="contacts.html">Get your Schedule</a></li>
+            <li><a href="mission.html">OUR MISSION</a></li>
+            <li><a href="schedule.html">GET RIGHT ROUTINE</a></li>
           </ul>
+          <h3>FIT COACH EVOLUTION</h3>
+          <div class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
         </nav>
         <!-- Top container -->
         <section class="top-container">
-          <header class="showcase">
+          <div class="showcase">
             <h1>Your Personal Fitness Training</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              cumque ipsam
+              We're a private personal training studio in Milton Keynes who help
+              busy men & women stop "trying to get in shape", and finally
+              achieve a health & body transformation they won’t rebound from…
             </p>
 
-            <a href="" class="btn">Read More</a>
-          </header>
+            <a href="/about.html" class="btn">Read More</a>
+          </div>
           <div class="top-box top-box-a">
             <h3>Membership</h3>
             <p class="price">$199/month</p>
-            <a href="" class="btn">Buy Now</a>
+            <a href="/service.html" class="btn">Buy Now</a>
           </div>
           <div class="top-box top-box-b">
             <h3>Pro Membership</h3>
             <p class="price">299/month</p>
-            <a href="" class="btn">Buy Now</a>
+            <a href="/service.html" class="btn">Buy Now</a>
           </div>
         </section>
         <!-- Top Container End -->
@@ -53,81 +65,95 @@
       <!-- Navigation -->
 
       <!-- Boxes Section -->
+      <main>
+        <section class="boxes">
+          <div class="box">
+            <i class="fas fa-chart-pie fa-4x"></i>
+            <h3>Nutrition Coaching</h3>
+            <p>
+              Our 6 Week Nutrition Coaching Project is ideal if you're tired of
+              yo-yo dieting, sick of juice cleanses and fads, and want to
+              finally take control of your health and physique.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-globe fa-4x"></i>
+            <h3>Online Training</h3>
+            <p>
+              6 Week Online Personal Training Package gives you an expert coach
+              by you side to hit your goals, no matter where you are in the
+              world (or what equipment you have available to you)
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-cog fa-4x"></i>
+            <h3>Personal Training</h3>
+            <p>
+              One To One Personal Training helps busy men and women to build
+              lean, athletic, healthy physiques without the frustrations,
+              rigidity & ‘bounce-back’
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-users fa-4x"></i>
+            <h3>Small Group Training</h3>
+            <p>
+              Small Group Personal Training helps Milton Keynes’ busy men and
+              women get in the best shape of their life, fall in love with
+              training, and become part of a fitness community WITHOUT banning
+              foods or taking the fun out of the process.
+            </p>
+          </div>
+        </section>
+        <!-- Boxes Section End -->
 
-      <section class="boxes">
-        <div class="box">
-          <i class="fas fa-chart-pie fa-4x"></i>
-          <h3>Analytics</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            quibusdam suscipit sequi explicabo quae dolorum.
-          </p>
-        </div>
-        <div class="box">
-          <i class="fas fa-globe fa-4x"></i>
-          <h3>Marketing</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            quibusdam suscipit sequi explicabo quae dolorum.
-          </p>
-        </div>
-        <div class="box">
-          <i class="fas fa-cog fa-4x"></i>
-          <h3>Development</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            quibusdam suscipit sequi explicabo quae dolorum.
-          </p>
-        </div>
-        <div class="box">
-          <i class="fas fa-users fa-4x"></i>
-          <h3>Support</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            quibusdam suscipit sequi explicabo quae dolorum.
-          </p>
-        </div>
-      </section>
-      <!-- Boxes Section End -->
+        <!-- Info Section -->
+        <section class="info">
+          <div class="info-image">
+            <img
+              src="https://www.armourycoachingstudio.co.uk/uploads/1/2/9/5/129586512/3_orig.jpg"
+              alt="Business Idea"
+            />
+          </div>
+          <div class="info-content">
+            <h2>Your Everyday Training</h2>
+            <p>
+              Training is unlike anything you'll have experienced before. In
+              micro training groups of just 6:1, all your workouts are
+              customised, recorded and coached by an experienced personal
+              trainer. The balance of the motivational group environment and
+              1-2-1 attention makes it the perfect mix to produce fast results,
+              without the bounce back
+            </p>
+            <a href="/schedule.html" class="btn">Learn More</a>
+          </div>
+        </section>
+        <!-- Info Section End-->
 
-      <!-- Info Section -->
-      <section class="info">
-        <div class="info-image">
-          <img src="../images/pic1.jpg" alt="Business Idea" />
-        </div>
-        <div class="info-content">
-          <h2>Your Business On The Web</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-            delectus, nobis impedit quia nisi sunt quos quo magnam error at
-            voluptates. Qui cumque corrupti ipsam.
-          </p>
-          <a href="" class="btn">Learn More</a>
-        </div>
-      </section>
-      <!-- Info Section End-->
+        <!-- Pictures Section -->
 
-      <!-- Pictures Section -->
-
-      <section class="random-pictures">
-        <img src="https://source.unsplash.com/random/200x200" alt="" />
-        <img src="https://source.unsplash.com/random/201x200" alt="" />
-        <img src="https://source.unsplash.com/random/202x200" alt="" />
-        <img src="https://source.unsplash.com/random/203x200" alt="" />
-        <img src="https://source.unsplash.com/random/204x200" alt="" />
-        <img src="https://source.unsplash.com/random/205x200" alt="" />
-        <img src="https://source.unsplash.com/random/206x200" alt="" />
-        <img src="https://source.unsplash.com/random/207x200" alt="" />
-        <img src="https://source.unsplash.com/random/208x200" alt="" />
-      </section>
-
+        <section class="random-pictures">
+          <!-- <img src="https://source.unsplash.com/random/200x200" alt="" />
+          <img src="https://source.unsplash.com/random/201x200" alt="" />
+          <img src="https://source.unsplash.com/random/202x200" alt="" />
+          <img src="https://source.unsplash.com/random/203x200" alt="" />
+          <img src="https://source.unsplash.com/random/204x200" alt="" />
+          <img src="https://source.unsplash.com/random/205x200" alt="" />
+          <img src="https://source.unsplash.com/random/206x200" alt="" />
+          <img src="https://source.unsplash.com/random/207x200" alt="" />
+          <img src="https://source.unsplash.com/random/208x200" alt="" /> -->
+        </section>
+      </main>
       <!-- Footer Section -->
-      <section class="footer">
+      <footer class="footer">
         <p>All Rights Reserved</p>
         <br />
-        <p>&copy: Khurrambek 2020</p>
-      </section>
+        <p>&copy; Khurrambek 2020</p>
+      </footer>
     </div>
     <!-- Wrapper end -->
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
