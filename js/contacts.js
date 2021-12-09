@@ -3,7 +3,8 @@ const username = document.querySelector("#username");
 const company = document.querySelector("#company");
 const phone = document.querySelector("#telephone");
 const email = document.querySelector("#email");
-console.log(form, username, company, phone, email);
+
+
 //shows message when there is error
 function showError(input, message) {
   const contactForm = input.parentElement;
@@ -57,15 +58,6 @@ function checkLength(input, min, max) {
   }
 }
 
-//check telephone is number
-function checkPhone(input) {
-  if (typeof input.value.trim() === "number") {
-    showSuccess(input);
-  } else {
-    showError(input, `${getFieldName(input)} must be valid phone number!`);
-  }
-}
-
 //get FieldName
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -76,10 +68,9 @@ function getFieldName(input) {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  checkPhone(phone);
-  checkEmail(email);
+  checkRequired([username, email, phone, company]);
   checkLength(username, 3, 15);
   checkLength(company, 6, 25);
   checkLength(phone, 7, 12);
-  checkRequired([username, email, phone, company]);
+  checkEmail(email);
 });
